@@ -19,6 +19,11 @@ Just import the vred module you would like to have autocompletion for at the top
 - Build scripts
 - External module managment
 
+## Issues
+
+- Missing list return type hints
+- Missing module/class documentation
+
 ## Feature Requests and Bugs
 
 This extension is still under development. Help improving this extension by submitting feature ideas/requests and bugs. Email me!
