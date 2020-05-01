@@ -10,10 +10,6 @@ Get used chromatic aberration values as RGB.
 from typing import List
 
 
-class integer():
-    pass
-
-
 class QVector3D():
     pass
 
@@ -32,7 +28,7 @@ def getIsChromaticAberrationActive() -> bool:
     return None
 
 
-def getNumberOfStreaks() -> integer:
+def getNumberOfStreaks() -> int:
     '''
     Get how many arms a Ring element has.
     '''
@@ -67,7 +63,7 @@ def setIsChromaticAberrationActive(isActive: bool):
     pass
 
 
-def setNumberOfStreaks(numberOfStreaks: integer):
+def setNumberOfStreaks(numberOfStreaks: int):
     '''
     Use to set how many arms a Ring element has.
     '''

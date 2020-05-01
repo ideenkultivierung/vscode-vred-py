@@ -10,31 +10,7 @@ Interface to work with collaboration sessions.
 from typing import List
 
 
-class integer():
-    pass
-
-
-class vrdNode():
-    pass
-
-
-class QMatrix4x4():
-    pass
-
-
 class QVector2D():
-    pass
-
-
-class vrdSessionUser():
-    pass
-
-
-class QVector3D():
-    pass
-
-
-class string():
     pass
 
 
@@ -42,7 +18,23 @@ class vrdMaterial():
     pass
 
 
+class QMatrix4x4():
+    pass
+
+
+class vrdSessionUser():
+    pass
+
+
 class QColor():
+    pass
+
+
+class vrdNode():
+    pass
+
+
+class QVector3D():
     pass
 
 
@@ -60,21 +52,21 @@ def addNodeSync(node: vrdNode):
     pass
 
 
-def blockSync(commandTypeName: string):
+def blockSync(commandTypeName: str):
     '''
     Calling blockSync, blocks all synchronizations to other users.
     '''
     pass
 
 
-def checkSessionLink(passwd: string, sessionLink: string) -> bool:
+def checkSessionLink(passwd: str, sessionLink: str) -> bool:
     '''
     Checks if the password is valid.
     '''
     return None
 
 
-def createSessionLink(server: string, passwd: string) -> string:
+def createSessionLink(server: str, passwd: str) -> str:
     '''
     Creates a connection string from the hostname and a password.
     '''
@@ -95,14 +87,14 @@ def getRemoteUsers():
     pass
 
 
-def getSessionLink() -> string:
+def getSessionLink() -> str:
     '''
     Returns the connection string of the collaboration session.
     '''
     return None
 
 
-def getSyncCommandNames() -> List[string]:
+def getSyncCommandNames() -> List[str]:
     '''
     Get all known command type names. These names can be used in blockSync and unblockSync.
     '''
@@ -158,7 +150,7 @@ def isSpeakerMute() -> bool:
     return None
 
 
-def join(sessionLink: string, userName: string, color: QColor, roomName: string, passwd: string, forceVersion: bool):
+def join(sessionLink: str, userName: str, color: QColor, roomName: str, passwd: str, forceVersion: bool):
     '''
     Joins an existing or creates a new vr collaboration sesson.
     '''
@@ -179,7 +171,7 @@ def removeNodeSync(node: vrdNode):
     pass
 
 
-def sendPython(command: string, commandId: string):
+def sendPython(command: str, commandId: str):
     '''
     Sends a python command to all other users.
     '''
@@ -249,7 +241,7 @@ def setPointerVisible(value: bool):
     pass
 
 
-def setRoom(room: string):
+def setRoom(room: str):
     '''
     Changes the room name, used for safety avatar visualization.
     '''
@@ -284,7 +276,7 @@ def setUserColor(userColor: QColor):
     pass
 
 
-def setUserName(userName: string):
+def setUserName(userName: str):
     '''
     Changes the user name.
     '''
@@ -298,7 +290,7 @@ def showDesktopAvatar(on: bool):
     pass
 
 
-def spectate(on: bool, userId: integer):
+def spectate(on: bool, userId: int):
     '''
     Turns spectator mode on or off.
     '''
@@ -319,49 +311,49 @@ def syncNode(node: vrdNode):
     pass
 
 
-def toPythonString(matrix: QMatrix4x4) -> string:
+def toPythonString(matrix: QMatrix4x4) -> str:
     '''
     Convert matrix to a python string that can used in sendPython.
     '''
     return None
 
 
-def toPythonString(vector2d: QVector2D) -> string:
+def toPythonString(vector2d: QVector2D) -> str:
     '''
     Convert vector to a python string that can used in sendPython.
     '''
     return None
 
 
-def toPythonString(vector3d: QVector3D) -> string:
+def toPythonString(vector3d: QVector3D) -> str:
     '''
     Convert vector to a python string that can used in sendPython.
     '''
     return None
 
 
-def toPythonString(node: vrdNode) -> string:
+def toPythonString(node: vrdNode) -> str:
     '''
     Convert a node to a python string that can used in sendPython.
     '''
     return None
 
 
-def toPythonString(material: vrdMaterial) -> string:
+def toPythonString(material: vrdMaterial) -> str:
     '''
     Convert a material to a python string that can used in sendPython.
     '''
     return None
 
 
-def toPythonString(nodes: List[vrdNode]) -> string:
+def toPythonString(nodes: List[vrdNode]) -> str:
     '''
     Convert a list of nodes to a python string that can used in sendPython.
     '''
     return None
 
 
-def unblockSync(commandTypeName: string):
+def unblockSync(commandTypeName: str):
     '''
     Calling unblockSync resumes synchronizations to other users.
     '''
@@ -375,14 +367,14 @@ def uploadScene():
     pass
 
 
-def uploadScenePath(path: string):
+def uploadScenePath(path: str):
     '''
     Sends the path of the project to be loaded to all users.
     '''
     pass
 
 
-def joinFailed(message: string, wrongVersion: bool):
+def joinFailed(message: str, wrongVersion: bool):
     '''
     The join operation has failed.
     '''
@@ -403,7 +395,7 @@ def pointerToolActiveChanged(on: bool):
     pass
 
 
-def progressChanged(action: string, progress: integer):
+def progressChanged(action: str, progress: int):
     '''
     Project upload or download progress has changed.
     '''
@@ -417,7 +409,7 @@ def progressFinished():
     pass
 
 
-def receivedSessionConfig(config: string):
+def receivedSessionConfig(config: str):
     '''
     A session configuration has been double clicked or dropped to the VRED window.
     '''
@@ -445,7 +437,7 @@ def speakerMuted(value: bool):
     pass
 
 
-def spectateChanged(on: bool, userId: integer):
+def spectateChanged(on: bool, userId: int):
     '''
     Spectator mode has been changed.
     '''

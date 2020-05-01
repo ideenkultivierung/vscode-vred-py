@@ -10,15 +10,7 @@ Interface to access lights, light sets and lens flares in VRED.
 from typing import List
 
 
-class integer():
-    pass
-
-
-class vrdNode():
-    pass
-
-
-class vrdLensFlareElement():
+class vrdLensFlareEffect():
     pass
 
 
@@ -26,7 +18,7 @@ class vrdBaseLightNode():
     pass
 
 
-class vrdLensFlareEffect():
+class vrdLensFlareGhost():
     pass
 
 
@@ -38,15 +30,15 @@ class vrdLensFlareGhostLine():
     pass
 
 
+class vrdLensFlareElement():
+    pass
+
+
+class vrdNode():
+    pass
+
+
 class vrdLightLinkSetNode():
-    pass
-
-
-class vrdLensFlareGhost():
-    pass
-
-
-class string():
     pass
 
 
@@ -89,28 +81,28 @@ def copyLensFlareGhosts(ghosts: List[vrdLensFlareGhost]):
     pass
 
 
-def createLight(name: string, type: LightType, parent: vrdNode) -> vrdNode:
+def createLight(name: str, type: LightType, parent: vrdNode) -> vrdNode:
     '''
     Create a new light node in light graph.
     '''
     return None
 
 
-def createLightGroup(name: string, parent: vrdNode) -> vrdNode:
+def createLightGroup(name: str, parent: vrdNode) -> vrdNode:
     '''
     Create a new light group.
     '''
     return None
 
 
-def createLightGroup(name: string, nodes: List[vrdNode]) -> vrdNode:
+def createLightGroup(name: str, nodes: List[vrdNode]) -> vrdNode:
     '''
     Create a new light group out of some lights.
     '''
     return None
 
 
-def createLightLinkSet(name: string) -> vrdLightLinkSetNode:
+def createLightLinkSet(name: str) -> vrdLightLinkSetNode:
     '''
     Create a new light link set.
     '''
@@ -138,14 +130,14 @@ def duplicateLights(nodes: List[vrdNode]):
     pass
 
 
-def findLight(name: string) -> vrdNode:
+def findLight(name: str) -> vrdNode:
     '''
     Find a light node with a given name in the light graph.
     '''
     return None
 
 
-def findLights(name: string) -> List[vrdNode]:
+def findLights(name: str) -> List[vrdNode]:
     '''
     Find all light nodes with a given name.
     '''
@@ -229,7 +221,7 @@ def isHeadLight(light: vrdBaseLightNode) -> bool:
     return None
 
 
-def loadLights(paths: List[string]) -> List[vrdNode]:
+def loadLights(paths: List[str]) -> List[vrdNode]:
     '''
     load lights from OpenSG Binary Geometry or VRED Project Binary file
     '''
@@ -271,7 +263,7 @@ def removeLights(nodes: List[vrdNode]):
     pass
 
 
-def saveLights(nodes: List[vrdNode], path: string) -> bool:
+def saveLights(nodes: List[vrdNode], path: str) -> bool:
     '''
     Collects all lights recursively in the given nodes and saves them as a OpenSG Binary Geometry file.
     '''
@@ -327,7 +319,7 @@ def lightLinkSetsChanged():
     pass
 
 
-def lightsConverted(lightIds: List[integer]):
+def lightsConverted(lightIds: List[int]):
     '''
     Signal that will be emitted when lights are converted to different light types.
     '''

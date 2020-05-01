@@ -14,11 +14,7 @@ class CollisionStructureBuildMethod():
     pass
 
 
-class string():
-    pass
-
-
-def addNode(nodeName: string):
+def addNode(nodeName: str):
     '''
     Add a not to collide with the camera.
     '''
@@ -53,7 +49,7 @@ def getEnabled() -> bool:
     return None
 
 
-def getNodes() -> List[string]:
+def getNodes() -> List[str]:
     '''
     Returns the list of node names that can collide with the camera.
     '''
@@ -67,7 +63,7 @@ def getSlide() -> bool:
     return None
 
 
-def removeNode(nodeName: string):
+def removeNode(nodeName: str):
     '''
     Remove a node from the camera collision detection.
     '''
@@ -95,7 +91,7 @@ def setEnabled(enabled: bool):
     pass
 
 
-def setNodes(nodeNames: List[string]):
+def setNodes(nodeNames: List[str]):
     '''
     Add nodes allowed to collide with the camera.
     '''

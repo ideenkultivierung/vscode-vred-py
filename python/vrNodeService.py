@@ -10,14 +10,6 @@ A service that provides helper functions for working with vrdNodes.
 from typing import List
 
 
-class string():
-    pass
-
-
-class integer():
-    pass
-
-
 class vrdNode():
     pass
 
@@ -40,35 +32,35 @@ def cloneNodes(nodes: List[vrdNode]) -> List[vrdNode]:
     return None
 
 
-def findNode(name: string, wildcard: bool, includeComponents: bool, root: vrdNode) -> vrdNode:
+def findNode(name: str, wildcard: bool, includeComponents: bool, root: vrdNode) -> vrdNode:
     '''
     Finds the node via name.
     '''
     return None
 
 
-def findNodes(name: string, wildcard: bool, includeComponents: bool, root: vrdNode) -> List[vrdNode]:
+def findNodes(name: str, wildcard: bool, includeComponents: bool, root: vrdNode) -> List[vrdNode]:
     '''
     Finds a list of nodes depending on their name.
     '''
     return None
 
 
-def findNodesWithPath(path: string, wildcard: bool, root: vrdNode) -> List[vrdNode]:
+def findNodesWithPath(path: str, wildcard: bool, root: vrdNode) -> List[vrdNode]:
     '''
     Finds a list of nodes depending on the node path.
     '''
     return None
 
 
-def findNodeWithPath(path: string, wildcard: bool, root: vrdNode) -> vrdNode:
+def findNodeWithPath(path: str, wildcard: bool, root: vrdNode) -> vrdNode:
     '''
     Finds a node depending on its node path.
     '''
     return None
 
 
-def getNodeFromId(nodeId: integer) -> vrdNode:
+def getNodeFromId(nodeId: int) -> vrdNode:
     '''
     Gets a node by its identifier.
     '''

@@ -10,7 +10,7 @@ Interface to work with interactive VR windows and tools.
 from typing import List
 
 
-class string():
+class vrdImmersiveMenu():
     pass
 
 
@@ -18,22 +18,18 @@ class vrdImmersiveTool():
     pass
 
 
-class vrdImmersiveMenu():
-    pass
-
-
 class QWidget():
     pass
 
 
-def createMenu(name: string) -> vrdImmersiveMenu:
+def createMenu(name: str) -> vrdImmersiveMenu:
     '''
     Creates a new VR menu.
     '''
     return None
 
 
-def createTool(name: string) -> vrdImmersiveTool:
+def createTool(name: str) -> vrdImmersiveTool:
     '''
     Creates a new VR tool visible on the VR tools menu.
     '''
@@ -47,7 +43,7 @@ def deleteMenu(menu: vrdImmersiveMenu):
     pass
 
 
-def deleteMenu(name: string):
+def deleteMenu(name: str):
     '''
     Removes a VR menu by name.
     '''
@@ -61,21 +57,21 @@ def deleteTool(tool: vrdImmersiveTool):
     pass
 
 
-def deleteTool(name: string):
+def deleteTool(name: str):
     '''
     Remove a VR tool by name.
     '''
     pass
 
 
-def findMenu(name: string) -> vrdImmersiveMenu:
+def findMenu(name: str) -> vrdImmersiveMenu:
     '''
     Find a VR menu by name.
     '''
     return None
 
 
-def findTool(name: string) -> vrdImmersiveTool:
+def findTool(name: str) -> vrdImmersiveTool:
     '''
     Find a VR tool by name.
     '''
@@ -103,7 +99,7 @@ def getTools():
     pass
 
 
-def openToolsSubMenu(content: string):
+def openToolsSubMenu(content: str):
     '''
     Opens a new tools sub menu with the given html content.
     '''

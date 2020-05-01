@@ -10,37 +10,29 @@ Base class for all nodes.
 from typing import List
 
 
-class QMatrix4x4():
-    pass
-
-
-class string():
-    pass
-
-
-class integer():
-    pass
-
-
 class vrdNode():
     pass
 
 
-def getChild(index: integer) -> vrdNode:
+class QMatrix4x4():
+    pass
+
+
+def getChild(index: int) -> vrdNode:
     '''
     Gets a child node by index.
     '''
     return None
 
 
-def getChildCount() -> integer:
+def getChildCount() -> int:
     '''
     Get the number of child nodes.
     '''
     return None
 
 
-def getChildIndex(child: vrdNode) -> integer:
+def getChildIndex(child: vrdNode) -> int:
     '''
     Get the index of the child node in the list of children.
     '''
@@ -61,7 +53,7 @@ def getChildrenRecursive() -> List[vrdNode]:
     return None
 
 
-def getName() -> string:
+def getName() -> str:
     '''
     Returns the name of the node.
     '''
@@ -110,7 +102,7 @@ def isVisible() -> bool:
     return None
 
 
-def setName(name: string):
+def setName(name: str):
     '''
     Sets the name of the node.
     '''

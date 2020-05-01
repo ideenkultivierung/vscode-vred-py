@@ -10,7 +10,7 @@ Gives access to a Virtual Reality HMD (Head-mounted display) like the HTC Vive o
 from typing import List
 
 
-class vrdStarVRRenderSettings():
+class vrdEyeGaze():
     pass
 
 
@@ -18,11 +18,11 @@ class vrdFoveatedQuality():
     pass
 
 
-class FoveatedQualityPreset():
+class vrdStarVRRenderSettings():
     pass
 
 
-class vrdEyeGaze():
+class FoveatedQualityPreset():
     pass
 
 

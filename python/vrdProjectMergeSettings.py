@@ -10,11 +10,7 @@ Returns the index of the environment.
 from typing import List
 
 
-class integer():
-    pass
-
-
-def getEnvironmentImportOption() -> integer:
+def getEnvironmentImportOption() -> int:
     '''
     Returns the index of the environment.
     '''
@@ -70,7 +66,7 @@ def getMergeVredMaterials() -> bool:
     return None
 
 
-def setEnvironmentImportOption(value: integer):
+def setEnvironmentImportOption(value: int):
     '''
     Sets the index of the environment that should be used during file import
     '''

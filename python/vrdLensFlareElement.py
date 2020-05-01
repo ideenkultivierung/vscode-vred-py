@@ -10,10 +10,6 @@ This is the base class of all lens flare effect classes. The Light Service works
 from typing import List
 
 
-class string():
-    pass
-
-
 def getIsActive() -> bool:
     '''
     Returns activation state of the lens flare element.
@@ -21,7 +17,7 @@ def getIsActive() -> bool:
     return None
 
 
-def getName() -> string:
+def getName() -> str:
     '''
     Returns name of this lens flare element.
     '''
@@ -35,7 +31,7 @@ def setIsActive(active: bool):
     pass
 
 
-def setName(name: string):
+def setName(name: str):
     '''
     Each lens flare has a name. The name must not be unique. This method set the name.
     '''

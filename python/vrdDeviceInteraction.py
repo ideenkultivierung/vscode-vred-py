@@ -14,25 +14,21 @@ class vrdDeviceAction():
     pass
 
 
-class string():
-    pass
-
-
-def addSupportedInteractionGroup(name: string):
+def addSupportedInteractionGroup(name: str):
     '''
     Adds an interaction group to the supported interaction groups.
     '''
     pass
 
 
-def createControllerAction(mapping: string) -> vrdDeviceAction:
+def createControllerAction(mapping: str) -> vrdDeviceAction:
     '''
     Creates an action for this interaction.
     '''
     return None
 
 
-def getControllerAction(name: string) -> vrdDeviceAction:
+def getControllerAction(name: str) -> vrdDeviceAction:
     '''
     Gets an already existing action related to the interaction.
     '''
@@ -67,21 +63,21 @@ def removeControllerAction(action: vrdDeviceAction):
     pass
 
 
-def removeSupportedInteractionGroup(name: string):
+def removeSupportedInteractionGroup(name: str):
     '''
     Removes an interaction group from being supported by the interaction.
     '''
     pass
 
 
-def setControllerActionMapping(actionName: string, mapping: string):
+def setControllerActionMapping(actionName: str, mapping: str):
     '''
     Sets the mapping of an already existing action related to this interaction.
     '''
     pass
 
 
-def setSupportedInteractionGroups(names: List[string]):
+def setSupportedInteractionGroups(names: List[str]):
     '''
     Sets the interaction groups the interaction will be part of. Setting no groups will activate this interaction for all interaction groups.
     '''

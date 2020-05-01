@@ -10,15 +10,11 @@ This class is the base from which all other light nodes are derived from. It con
 from typing import List
 
 
-class Unit():
-    pass
-
-
 class vrdLightTransform():
     pass
 
 
-class integer():
+class Unit():
     pass
 
 
@@ -110,7 +106,7 @@ def getOn() -> bool:
     return None
 
 
-def getTemperature() -> integer:
+def getTemperature() -> int:
     '''
     Returns the light temperature.
     '''
@@ -208,7 +204,7 @@ def setOn(on: bool):
     pass
 
 
-def setTemperature(kelvin: integer):
+def setTemperature(kelvin: int):
     '''
     Sets the light temperature.
     '''

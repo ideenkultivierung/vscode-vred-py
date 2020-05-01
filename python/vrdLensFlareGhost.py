@@ -14,11 +14,11 @@ class vrdImage():
     pass
 
 
-class ElementShape():
+class QVector3D():
     pass
 
 
-class QVector3D():
+class ElementShape():
     pass
 
 

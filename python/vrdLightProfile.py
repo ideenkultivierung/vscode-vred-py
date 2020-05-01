@@ -10,19 +10,11 @@ Returns where the light profile is located.
 from typing import List
 
 
-class string():
-    pass
-
-
-class integer():
-    pass
-
-
 class QVector3D():
     pass
 
 
-def getAbsolutePath() -> string:
+def getAbsolutePath() -> str:
     '''
     Returns where the light profile is located.
     '''
@@ -64,28 +56,28 @@ def getLumensPerLamp() -> float:
     return None
 
 
-def getNumHorizontalAngles() -> integer:
+def getNumHorizontalAngles() -> int:
     '''
     Returns the number of horizontal angles.
     '''
     return None
 
 
-def getNumLuminaires() -> integer:
+def getNumLuminaires() -> int:
     '''
     Returns the number of luminaires.
     '''
     return None
 
 
-def getNumVerticalAngles() -> integer:
+def getNumVerticalAngles() -> int:
     '''
     Returns the number of vertical angles.
     '''
     return None
 
 
-def getPhotometricType() -> integer:
+def getPhotometricType() -> int:
     '''
     Returns the photometric type.
     '''
@@ -99,7 +91,7 @@ def getSize() -> QVector3D:
     return None
 
 
-def getUnitsType() -> integer:
+def getUnitsType() -> int:
     '''
     Returns the units type.
     '''

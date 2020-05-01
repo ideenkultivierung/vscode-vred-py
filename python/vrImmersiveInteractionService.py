@@ -10,11 +10,7 @@ This service allows the management of all immersive device interactions that are
 from typing import List
 
 
-class VisualizationMode():
-    pass
-
-
-class vrdNode():
+class TeleportGroundMode():
     pass
 
 
@@ -22,11 +18,11 @@ class ControlMode():
     pass
 
 
-class TeleportGroundMode():
+class vrdDeviceMessageData():
     pass
 
 
-class vrdDeviceMessageData():
+class vrdNode():
     pass
 
 
@@ -34,7 +30,7 @@ class vrdRayIntersection():
     pass
 
 
-class string():
+class VisualizationMode():
     pass
 
 
@@ -164,7 +160,7 @@ def setDefaultInteractionsActive(active: bool):
     pass
 
 
-def setInteractionActive(name: string, active: bool):
+def setInteractionActive(name: str, active: bool):
     '''
     Activates or deactivates the specified interaction tool. Built-in interactions are named “Teleport”, “Pointer”.
     '''

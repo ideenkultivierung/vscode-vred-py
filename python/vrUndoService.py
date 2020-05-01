@@ -10,10 +10,6 @@ Service that provides access to undo / redo functionality.
 from typing import List
 
 
-class string():
-    pass
-
-
 def beginBlockUndo():
     '''
     Prefix call. Temporarily blocks undo for all the commands that are created between beginBlockUndo and endBlockUndo.
@@ -21,7 +17,7 @@ def beginBlockUndo():
     pass
 
 
-def beginMultiCommand(name: string, description: string, mergeEnabled: bool):
+def beginMultiCommand(name: str, description: str, mergeEnabled: bool):
     '''
     Prefix call. Used to wrap subsequent undo-able service calls to one grouped command.
     '''

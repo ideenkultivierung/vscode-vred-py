@@ -10,15 +10,11 @@ Represents an action that is part of an interaction.
 from typing import List
 
 
-class string():
-    pass
-
-
 class vrdDeviceActionSignal():
     pass
 
 
-def getName() -> string:
+def getName() -> str:
     '''
     Gets the name of the action.
     '''

@@ -10,15 +10,11 @@ This class represents a camera track node.
 from typing import List
 
 
-class integer():
+class CameraTrackType():
     pass
 
 
 class vrdViewpointNode():
-    pass
-
-
-class CameraTrackType():
     pass
 
 
@@ -57,14 +53,14 @@ def getType() -> CameraTrackType:
     return None
 
 
-def getViewpoint(index: integer) -> vrdViewpointNode:
+def getViewpoint(index: int) -> vrdViewpointNode:
     '''
     Returns a viewpoint node by index.
     '''
     return None
 
 
-def getViewpointCount() -> integer:
+def getViewpointCount() -> int:
     '''
     Returns the number of viewpoints belonging to this camera track node.
     '''

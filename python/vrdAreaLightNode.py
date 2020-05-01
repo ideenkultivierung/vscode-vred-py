@@ -10,15 +10,11 @@ This is the base class for all area lights. These lights emit light from an enti
 from typing import List
 
 
-class integer():
+class vrdShadowMap():
     pass
 
 
 class vrdLightTexture():
-    pass
-
-
-class vrdShadowMap():
     pass
 
 
@@ -44,7 +40,7 @@ def getIlluminateScene() -> bool:
     return None
 
 
-def getInteractiveQuality() -> integer:
+def getInteractiveQuality() -> int:
     '''
     Returns the raytracing quality level for the interactive mode.
     '''
@@ -79,7 +75,7 @@ def getShadowMap() -> vrdShadowMap:
     return None
 
 
-def getStillFrameQuality() -> integer:
+def getStillFrameQuality() -> int:
     '''
     Returns the ratracing still frame quality level.
     '''
@@ -114,7 +110,7 @@ def setIlluminateScene(illuminateScene: bool):
     pass
 
 
-def setInteractiveQuality(quality: integer):
+def setInteractiveQuality(quality: int):
     '''
     Sets the raytracing quality level for the interactive mode.
     '''
@@ -135,7 +131,7 @@ def setPrimaryVisibility(visible: bool):
     pass
 
 
-def setStillFrameQuality(quality: integer):
+def setStillFrameQuality(quality: int):
     '''
     Sets the raytracing quality level for still frame rendering.
     '''

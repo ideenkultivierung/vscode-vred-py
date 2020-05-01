@@ -10,10 +10,6 @@ VR tool object.
 from typing import List
 
 
-class string():
-    pass
-
-
 class QIcon():
     pass
 
@@ -134,21 +130,21 @@ def setChecked(value: bool):
     pass
 
 
-def setCheckedCommand(value: string):
+def setCheckedCommand(value: str):
     '''
     Sets the Python command that is executed when the button is checked.
     '''
     pass
 
 
-def setClickedCommand(value: string):
+def setClickedCommand(value: str):
     '''
     Sets the Python command that is executed on button click.
     '''
     pass
 
 
-def setGroup(value: string):
+def setGroup(value: str):
     '''
     Changes the group in which the tool is inserted.
     '''
@@ -162,42 +158,42 @@ def setIcon(icon: QIcon):
     pass
 
 
-def setIconData(data: string, format: string):
+def setIconData(data: str, format: str):
     '''
     Use a base64 encoded string to set the icon.
     '''
     pass
 
 
-def setIconPath(iconPath: string):
+def setIconPath(iconPath: str):
     '''
     Use the image at the given path as an icon.
     '''
     pass
 
 
-def setOnOffIconData(onData: string, offData: string, format: string):
+def setOnOffIconData(onData: str, offData: str, format: str):
     '''
     Use two base64 encoded strings to set the icon.
     '''
     pass
 
 
-def setText(text: string):
+def setText(text: str):
     '''
     Changes the text displayed on the VR tools menu.
     '''
     pass
 
 
-def setUncheckedCommand(value: string):
+def setUncheckedCommand(value: str):
     '''
     Sets the Python command that is executed when the button is unchecked.
     '''
     pass
 
 
-def setViewContent(value: string):
+def setViewContent(value: str):
     '''
     On tool button press, the given content is displayed on a menu panel.
     '''

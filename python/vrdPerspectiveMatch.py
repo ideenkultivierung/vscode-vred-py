@@ -10,11 +10,11 @@ Class to access camera perspective matching functionality.
 from typing import List
 
 
-class VanishingLinesType():
+class QVector3D():
     pass
 
 
-class QVector3D():
+class VanishingLinesType():
     pass
 
 

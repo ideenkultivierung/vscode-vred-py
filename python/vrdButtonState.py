@@ -10,7 +10,7 @@ Represents the state of a button on a VR controller.
 from typing import List
 
 
-class string():
+class QVector2D():
     pass
 
 
@@ -18,11 +18,7 @@ class vrdButtonState():
     pass
 
 
-class QVector2D():
-    pass
-
-
-def getName() -> string:
+def getName() -> str:
     '''
     Default destructor.
     '''
@@ -50,7 +46,7 @@ def isTouched() -> bool:
     return None
 
 
-def setName(name: string):
+def setName(name: str):
     '''
     Sets the name of the button to which the state belongs.
     '''

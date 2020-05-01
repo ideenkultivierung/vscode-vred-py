@@ -10,10 +10,6 @@ User information for collaboration sessions.
 from typing import List
 
 
-class string():
-    pass
-
-
 def getCameraMatrix():
     '''
     Documentation missing
@@ -168,7 +164,7 @@ def getUserName():
     pass
 
 
-def sendPython(command: string, commandId: string):
+def sendPython(command: str, commandId: str):
     '''
     Sends a python command to this users.
     '''

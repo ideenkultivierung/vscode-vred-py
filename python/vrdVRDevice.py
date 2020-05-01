@@ -10,14 +10,6 @@ Represents a VR device like a controller or a tracker. This can be created befor
 from typing import List
 
 
-class integer():
-    pass
-
-
-class vrdNode():
-    pass
-
-
 class QMatrix4x4():
     pass
 
@@ -26,7 +18,7 @@ class vrdButtonState():
     pass
 
 
-class string():
+class vrdNode():
     pass
 
 
@@ -38,7 +30,7 @@ class vrdVirtualTouchpadButton():
     pass
 
 
-def addVirtualButton(button: vrdVirtualTouchpadButton, physicalButton: string):
+def addVirtualButton(button: vrdVirtualTouchpadButton, physicalButton: str):
     '''
     Adds a virtual button to the controller that maps a position of a button to a new signal.
     '''
@@ -52,21 +44,21 @@ def disableRay():
     pass
 
 
-def enableRay(axis: string):
+def enableRay(axis: str):
     '''
     Enables a pointing ray out of the controller.
     '''
     pass
 
 
-def getButtonState(button: string) -> vrdButtonState:
+def getButtonState(button: str) -> vrdButtonState:
     '''
     Gets the state of the current button.
     '''
     return None
 
 
-def getName() -> string:
+def getName() -> str:
     '''
     Gets the name of the device
     '''
@@ -80,7 +72,7 @@ def getNode() -> vrdNode:
     return None
 
 
-def getSerialNumber() -> string:
+def getSerialNumber() -> str:
     '''
     Gets the serial number of the device.
     '''
@@ -94,7 +86,7 @@ def getTrackingMatrix():
     pass
 
 
-def getVisualizationMode() -> integer:
+def getVisualizationMode() -> int:
     '''
     Gets the current visualization mode.
     '''
@@ -122,28 +114,28 @@ def pick() -> vrdRayIntersection:
     return None
 
 
-def removeVirtualButton(button: vrdVirtualTouchpadButton, physicalButton: string):
+def removeVirtualButton(button: vrdVirtualTouchpadButton, physicalButton: str):
     '''
     Removes a virtual button that is related to a physical button.
     '''
     pass
 
 
-def removeVirtualButton(virtualButton: string, physicalButton: string):
+def removeVirtualButton(virtualButton: str, physicalButton: str):
     '''
     Removes a virtual button that is related to a physical button.
     '''
     pass
 
 
-def setButtonPressed(state: bool, button: string):
+def setButtonPressed(state: bool, button: str):
     '''
     Simulate a button press.
     '''
     pass
 
 
-def setButtonTouched(state: bool, button: string):
+def setButtonTouched(state: bool, button: str):
     '''
     Simulate a button press.
     '''
@@ -164,7 +156,7 @@ def setVisible(visible: bool):
     pass
 
 
-def setVisualizationMode(mode: integer):
+def setVisualizationMode(mode: int):
     '''
     Sets the visualization mode.
     '''
@@ -178,7 +170,7 @@ def signal():
     pass
 
 
-def vibrate(milliseconds: integer, axisId: integer):
+def vibrate(milliseconds: int, axisId: int):
     '''
     Triggers the vibration functionality of the device if available.
     '''

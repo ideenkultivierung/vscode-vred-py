@@ -10,15 +10,11 @@ Interface to manage constraints in VRED.
 from typing import List
 
 
-class vrdNode():
+class vrdAimConstraintNode():
     pass
 
 
 class vrdPositionConstraintNode():
-    pass
-
-
-class vrdAimConstraintNode():
     pass
 
 
@@ -31,6 +27,10 @@ class vrdOrientationConstraintNode():
 
 
 class vrdConstraintNode():
+    pass
+
+
+class vrdNode():
     pass
 
 

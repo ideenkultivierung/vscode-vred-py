@@ -14,11 +14,7 @@ class vrdObject():
     pass
 
 
-class string():
-    pass
-
-
-def propertyChanged(obj: vrdObject, name: string):
+def propertyChanged(obj: vrdObject, name: str):
     '''
     This signal is sent everytime a property of a         vrdObject is changed.
     '''

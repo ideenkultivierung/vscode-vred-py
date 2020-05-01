@@ -10,11 +10,7 @@ Returns the internal object id.
 from typing import List
 
 
-class integer():
-    pass
-
-
-def getObjectId() -> integer:
+def getObjectId() -> int:
     '''
     Returns the internal object id.
     '''

@@ -10,7 +10,7 @@ API version: v2 | Generation Date: 2020-05-01 | VRED-Py: Visual Studio Code Tool
 from typing import List
 
 
-class string():
+class QVector3D():
     pass
 
 
@@ -22,11 +22,7 @@ class vrdLensFlareElement():
     pass
 
 
-class QVector3D():
-    pass
-
-
-def createLensFlareElement(name: string, type: ElementType) -> vrdLensFlareElement:
+def createLensFlareElement(name: str, type: ElementType) -> vrdLensFlareElement:
     '''
     
     '''

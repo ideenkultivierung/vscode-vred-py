@@ -10,10 +10,6 @@ This class represents a shadow map used in OpenGL rendering.
 from typing import List
 
 
-class integer():
-    pass
-
-
 def getFilterRadius() -> float:
     '''
     Returns the radius used for shadow map filtering.
@@ -21,7 +17,7 @@ def getFilterRadius() -> float:
     return None
 
 
-def getResolution() -> integer:
+def getResolution() -> int:
     '''
     Returns the resolution of the shadow map.
     '''
@@ -35,7 +31,7 @@ def setFilterRadius(radius: float):
     pass
 
 
-def setResolution(resolution: integer):
+def setResolution(resolution: int):
     '''
     Sets the resolution of the shadow map.
     '''

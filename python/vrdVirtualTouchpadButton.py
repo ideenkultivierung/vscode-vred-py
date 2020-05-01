@@ -10,14 +10,6 @@ Represents a virtual button loacted on a touchpad of an VR controller. This virt
 from typing import List
 
 
-class string():
-    pass
-
-
-class integer():
-    pass
-
-
 class vrdVirtualTouchpadButton():
     pass
 
@@ -43,7 +35,7 @@ def getMinRadius() -> float:
     return None
 
 
-def getName() -> string:
+def getName() -> str:
     '''
     Gets the name of the virtual button.
     '''
@@ -57,7 +49,7 @@ def getStartAngle() -> float:
     return None
 
 
-def getVirtualButtonId() -> integer:
+def getVirtualButtonId() -> int:
     '''
     Gets the virtual button id, which is set internally.
     '''
@@ -85,7 +77,7 @@ def setMinRadius(min: float):
     pass
 
 
-def setName(name: string):
+def setName(name: str):
     '''
     Sets the name of the virtual button.
     '''
@@ -113,7 +105,7 @@ def vrdVirtualTouchpadButton(button: vrdVirtualTouchpadButton):
     pass
 
 
-def vrdVirtualTouchpadButton(name: string, minRadius: float, maxRadius: float, startAngle: float, endAngle: float):
+def vrdVirtualTouchpadButton(name: str, minRadius: float, maxRadius: float, startAngle: float, endAngle: float):
     '''
     Constructor that creates an object with all necessary parameters to describe the virtual button.
     '''

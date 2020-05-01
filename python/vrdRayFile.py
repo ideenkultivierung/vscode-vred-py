@@ -10,14 +10,6 @@ Interface to ray files.
 from typing import List
 
 
-class string():
-    pass
-
-
-class integer():
-    pass
-
-
 class vrdRayFile():
     pass
 
@@ -54,7 +46,7 @@ def getDirectEvaluationRadius() -> float:
     return None
 
 
-def getFileName() -> string:
+def getFileName() -> str:
     '''
     Returns the file name of the ray file.
     '''
@@ -82,7 +74,7 @@ def getUseRandomSampling() -> bool:
     return None
 
 
-def getVisualizationRayCount() -> integer:
+def getVisualizationRayCount() -> int:
     '''
     Returns the number of rays used for the viewport visualization.
     '''
@@ -96,7 +88,7 @@ def getVisualizationRayLength() -> float:
     return None
 
 
-def load(filename: string):
+def load(filename: str):
     '''
     Loads the given file.
     '''
@@ -131,7 +123,7 @@ def setDirectEvaluationRadius(radius: float):
     pass
 
 
-def setFileName(fileName: string):
+def setFileName(fileName: str):
     '''
     Loads the given ray file and sets the file name.
     '''
@@ -159,7 +151,7 @@ def setUseRandomSampling(use: bool):
     pass
 
 
-def setVisualizationRayCount(count: integer):
+def setVisualizationRayCount(count: int):
     '''
     Sets the number of rays used for the viewport visualization.
     '''

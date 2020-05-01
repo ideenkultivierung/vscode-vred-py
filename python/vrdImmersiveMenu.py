@@ -10,15 +10,7 @@ VR menu object.
 from typing import List
 
 
-class integer():
-    pass
-
-
 class MenuConstraint():
-    pass
-
-
-class MenuOrigin():
     pass
 
 
@@ -26,11 +18,11 @@ class QVector3D():
     pass
 
 
-class string():
+class MenuOrigin():
     pass
 
 
-def attachTo(origin: integer, constraint: integer):
+def attachTo(origin: int, constraint: int):
     '''
     Reattaches the menu.
     '''
@@ -107,7 +99,7 @@ def setConstraint(value: MenuConstraint):
     pass
 
 
-def setContent(content: string):
+def setContent(content: str):
     '''
     Use the given string to show the content.
     '''
@@ -128,14 +120,14 @@ def setHeight(value: float):
     pass
 
 
-def setModule(moduleTitle: string):
+def setModule(moduleTitle: str):
     '''
     Use the given name to find a module to be displayed on the menu.
     '''
     pass
 
 
-def setName(value: string):
+def setName(value: str):
     '''
     Changes the name of the menu.
     '''
@@ -177,7 +169,7 @@ def setTranslation(x: float, y: float, z: float):
     pass
 
 
-def setUrl(url: string, pixelWidth: integer, pixelHeight: integer):
+def setUrl(url: str, pixelWidth: int, pixelHeight: int):
     '''
     Use the given url to show web content on the mneu.
     '''

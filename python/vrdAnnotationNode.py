@@ -10,10 +10,6 @@ Returns the label background color.
 from typing import List
 
 
-class string():
-    pass
-
-
 class vrdNode():
     pass
 
@@ -82,7 +78,7 @@ def getSize():
     pass
 
 
-def getText() -> string:
+def getText() -> str:
     '''
     Returns the displayed description text.
     '''
@@ -152,7 +148,7 @@ def setSize(size: float):
     pass
 
 
-def setText(text: string):
+def setText(text: str):
     '''
     The displayed description text.
     '''

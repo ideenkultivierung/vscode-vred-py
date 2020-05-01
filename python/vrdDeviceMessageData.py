@@ -10,14 +10,6 @@ Defines message content for     vrImmersiveInteractionService.showControllerMess
 from typing import List
 
 
-class string():
-    pass
-
-
-class integer():
-    pass
-
-
 class QVector3D():
     pass
 
@@ -99,7 +91,7 @@ def setBackgroundColor(color: QVector3D):
     pass
 
 
-def setFontSize(value: integer):
+def setFontSize(value: int):
     '''
     Set the font size for the message text.
     '''
@@ -120,14 +112,14 @@ def setFrameSize(value: float):
     pass
 
 
-def setImageDpi(dpi: integer):
+def setImageDpi(dpi: int):
     '''
     Set the dpi for the image.
     '''
     pass
 
 
-def setImagePath(path: string):
+def setImagePath(path: str):
     '''
     Set a path to an image file. See         vrdDeviceMessageData.setUseImage(value).
     '''
@@ -148,7 +140,7 @@ def setRotation(eulerRotation: QVector3D):
     pass
 
 
-def setText(text: string):
+def setText(text: str):
     '''
     Set the message text.
     '''

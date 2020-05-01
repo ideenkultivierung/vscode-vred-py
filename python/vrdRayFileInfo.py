@@ -10,14 +10,6 @@ Interface to ray files.
 from typing import List
 
 
-class string():
-    pass
-
-
-class integer():
-    pass
-
-
 def getLuminousPower():
     '''
     Documentation missing
@@ -46,7 +38,7 @@ def getSpectralInformationString():
     pass
 
 
-def vrdRayFileInfo(luminousPower: float, numberOfRays: integer, scalingFactor: float, spectralInformationString: string):
+def vrdRayFileInfo(luminousPower: float, numberOfRays: int, scalingFactor: float, spectralInformationString: str):
     '''
     Create a ray file information object. In general this is not created by the user but returned by a         vrdRayFile to provide information about the used ray file.
     '''

@@ -10,23 +10,7 @@ Class to access tonemapping functionality.
 from typing import List
 
 
-class CameraColorspace():
-    pass
-
-
-class CameraResponseCurveMode():
-    pass
-
-
-class CameraTonemapper():
-    pass
-
-
 class QVector2D():
-    pass
-
-
-class CameraSensorResponse():
     pass
 
 
@@ -34,7 +18,19 @@ class CameraCandelaMapping():
     pass
 
 
-class string():
+class CameraTonemapper():
+    pass
+
+
+class CameraResponseCurveMode():
+    pass
+
+
+class CameraColorspace():
+    pass
+
+
+class CameraSensorResponse():
     pass
 
 
@@ -157,14 +153,14 @@ def getWhitePoint() -> float:
     return None
 
 
-def loadResponseCurve(fileName: string) -> bool:
+def loadResponseCurve(fileName: str) -> bool:
     '''
     Loads a saved response curve from a file.
     '''
     return None
 
 
-def saveResponseCurve(fileName: string) -> bool:
+def saveResponseCurve(fileName: str) -> bool:
     '''
     Saves the response curve to a file.
     '''

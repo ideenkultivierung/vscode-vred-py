@@ -10,10 +10,6 @@ Holds shading quality settings for foveated rendering in VR. See     vrHMDServic
 from typing import List
 
 
-class integer():
-    pass
-
-
 class vrdFoveatedQuality():
     pass
 
@@ -36,7 +32,7 @@ def getMiddle() -> ShadingQuality:
     return None
 
 
-def getMinimumMultisamplingSamples() -> integer:
+def getMinimumMultisamplingSamples() -> int:
     '''
     Get minimum number of multisampling samples (Realtime Antialiasing) that is required for this set of shading qualities. Supersampling 2x, 4x, 8x require at least the same number of multisampling samples (2, 4, 8).
     '''

@@ -10,7 +10,7 @@ Returns the falloff of the light intensity.
 from typing import List
 
 
-class vrdLightProfile():
+class vrdLensFlareEffect():
     pass
 
 
@@ -18,11 +18,11 @@ class vrdLightTexture():
     pass
 
 
-class Attenuation():
+class vrdLightProfile():
     pass
 
 
-class vrdLensFlareEffect():
+class Attenuation():
     pass
 
 

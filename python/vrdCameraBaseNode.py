@@ -10,19 +10,11 @@ This class serves as base class for     vrdCameraNode and vrdViewpointNode.
 from typing import List
 
 
+class QVector2D():
+    pass
+
+
 class vrdCameraBaseNode():
-    pass
-
-
-class BlendMode():
-    pass
-
-
-class string():
-    pass
-
-
-class integer():
     pass
 
 
@@ -30,23 +22,7 @@ class QMatrix4x4():
     pass
 
 
-class FovMode():
-    pass
-
-
-class QVector3D():
-    pass
-
-
-class CameraAxis():
-    pass
-
-
-class QColor():
-    pass
-
-
-class QVector4D():
+class CameraStereoLayout():
     pass
 
 
@@ -54,7 +30,7 @@ class CameraProjectionMode():
     pass
 
 
-class FogFalloffMode():
+class vrdImage():
     pass
 
 
@@ -62,23 +38,11 @@ class CameraEye():
     pass
 
 
-class vrdImage():
+class QColor():
     pass
 
 
-class vrdNode():
-    pass
-
-
-class vrdPerspectiveMatch():
-    pass
-
-
-class CameraStereoLayout():
-    pass
-
-
-class QVector2D():
+class FogFalloffMode():
     pass
 
 
@@ -86,7 +50,35 @@ class vrdTonemapper():
     pass
 
 
+class BlendMode():
+    pass
+
+
 class vrCameraFromAtUp():
+    pass
+
+
+class vrdPerspectiveMatch():
+    pass
+
+
+class vrdNode():
+    pass
+
+
+class QVector4D():
+    pass
+
+
+class CameraAxis():
+    pass
+
+
+class QVector3D():
+    pass
+
+
+class FovMode():
     pass
 
 
@@ -391,7 +383,7 @@ def getGlareSize() -> float:
     return None
 
 
-def getGlareStreaks() -> integer:
+def getGlareStreaks() -> int:
     '''
     Returns the number of glare streaks.
     '''
@@ -678,14 +670,14 @@ def isOrthographic() -> bool:
     return None
 
 
-def loadBlendMap(fileName: string, eye: CameraEye) -> bool:
+def loadBlendMap(fileName: str, eye: CameraEye) -> bool:
     '''
     Loads an image from a file and sets it as blending map for either the left or the right eye.
     '''
     return None
 
 
-def loadDistortionMap(fileName: string, eye: CameraEye) -> bool:
+def loadDistortionMap(fileName: str, eye: CameraEye) -> bool:
     '''
     Loads an image from a file and sets it as distortion map for either the left or the right eye.
     '''
@@ -1000,7 +992,7 @@ def setGlareSize(value: float):
     pass
 
 
-def setGlareStreaks(value: integer):
+def setGlareStreaks(value: int):
     '''
     Sets the number of glare streaks.
     '''

@@ -10,15 +10,11 @@ Encapsulates the configuration properties for a particular     vrCADFileTypes.Fi
 from typing import List
 
 
-class SmartReferenceBehavior():
-    pass
-
-
-class integer():
-    pass
-
-
 class SourceReferenceBehavior():
+    pass
+
+
+class SmartReferenceBehavior():
     pass
 
 
@@ -134,7 +130,7 @@ def getImportMeshes() -> bool:
     return None
 
 
-def getImportMeshLODs() -> integer:
+def getImportMeshLODs() -> int:
     '''
     Query which mesh LODs should be imported.
     '''
@@ -169,7 +165,7 @@ def getImportVariants() -> bool:
     return None
 
 
-def getJtToolkit() -> integer:
+def getJtToolkit() -> int:
     '''
     Query which Jt toolkit is used for import.
     '''
@@ -379,7 +375,7 @@ def setImportMeshes(import_: bool):
     pass
 
 
-def setImportMeshLODs(lodOption: integer):
+def setImportMeshLODs(lodOption: int):
     '''
     Select which mesh LODs should be imported.
     '''
@@ -414,7 +410,7 @@ def setImportVariants(import_: bool):
     pass
 
 
-def setJtToolkit(toolkit: integer):
+def setJtToolkit(toolkit: int):
     '''
     Select which Jt toolkit should be used for import.
     '''

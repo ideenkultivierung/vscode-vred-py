@@ -10,11 +10,11 @@ Signal object containing actual signals that are sent by the     vrdVRDevice.
 from typing import List
 
 
-class vrdVRDevice():
+class vrdNode():
     pass
 
 
-class vrdNode():
+class vrdVRDevice():
     pass
 
 

@@ -10,19 +10,15 @@ This class represents a texture that can be projected by a light source into the
 from typing import List
 
 
-class integer():
-    pass
-
-
 class QVector2D():
     pass
 
 
-class RepeatMode():
+class vrdImage():
     pass
 
 
-class vrdImage():
+class RepeatMode():
     pass
 
 
@@ -40,7 +36,7 @@ def getConnectRepeatModes() -> bool:
     return None
 
 
-def getFrameOffset() -> integer:
+def getFrameOffset() -> int:
     '''
     Returns the offset to the image number when using an image sequence.
     '''
@@ -124,7 +120,7 @@ def setConnectRepeatModes(connected: bool):
     pass
 
 
-def setFrameOffset(offset: integer):
+def setFrameOffset(offset: int):
     '''
     Sets an offset to the image number when using an image sequence.
     '''

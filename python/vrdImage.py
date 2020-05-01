@@ -10,14 +10,6 @@ Class that gives access to VRED’s internal image format.
 from typing import List
 
 
-class string():
-    pass
-
-
-class QImage():
-    pass
-
-
 class QIcon():
     pass
 
@@ -26,7 +18,11 @@ class QSize():
     pass
 
 
-def getAbsolutePath() -> string:
+class QImage():
+    pass
+
+
+def getAbsolutePath() -> str:
     '''
     Returns the absolute path of the image.
     '''

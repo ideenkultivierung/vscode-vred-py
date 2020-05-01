@@ -10,27 +10,7 @@ Aborts an import job.
 from typing import List
 
 
-class vrdAtfSettings():
-    pass
-
-
-class integer():
-    pass
-
-
-class vrdNode():
-    pass
-
-
-class JobState():
-    pass
-
-
 class vrdSceneImportSettings():
-    pass
-
-
-class string():
     pass
 
 
@@ -42,53 +22,65 @@ class FileExtensionFilterMode():
     pass
 
 
+class JobState():
+    pass
+
+
+class vrdNode():
+    pass
+
+
 class FileType():
     pass
 
 
-def abortImport(importId: integer):
+class vrdAtfSettings():
+    pass
+
+
+def abortImport(importId: int):
     '''
     Aborts an import job.
     '''
     pass
 
 
-def checkCadType(file: string):
+def checkCadType(file: str):
     '''
     Asynchronously starts querying the CAD file type of a file with the given file path. After succesfully querying the type or looking it up in a cache a fileTypeReceived signal is emited. This might be needed since some file extensions, i.E. .prt, can’t be clearly associated to a single file type.
     '''
     pass
 
 
-def getBaseFileSuffix(file: string) -> string:
+def getBaseFileSuffix(file: str) -> str:
     '''
     Returns the file extension.
     '''
     return None
 
 
-def getFileName() -> string:
+def getFileName() -> str:
     '''
     Gets the current file name.
     '''
     return None
 
 
-def getFileTypeByFileName(file: string) -> FileType:
+def getFileTypeByFileName(file: str) -> FileType:
     '''
     Gets the file type by file name.
     '''
     return None
 
 
-def getImageReadFilter() -> string:
+def getImageReadFilter() -> str:
     '''
     This returns a space separated list of the the supported image file types that can be loaded.
     '''
     return None
 
 
-def getImageWriteFilter() -> string:
+def getImageWriteFilter() -> str:
     '''
     This returns a space separated list of the the supported image file types that can be saved.
     '''
@@ -109,7 +101,7 @@ def getImportSettingsFromPreferences(fileType: FileType) -> vrdAtfSettings:
     return None
 
 
-def getMaxNumImportProcesses() -> integer:
+def getMaxNumImportProcesses() -> int:
     '''
     Returns the maximum number import processes.
     '''
@@ -130,7 +122,7 @@ def getProjectMergeSettings() -> vrdProjectMergeSettings:
     return None
 
 
-def getReadFileTypesFilter(mode: FileExtensionFilterMode) -> string:
+def getReadFileTypesFilter(mode: FileExtensionFilterMode) -> str:
     '''
     Gets the filter for readable file types.
     '''
@@ -144,42 +136,42 @@ def getSceneImportSettings() -> vrdSceneImportSettings:
     return None
 
 
-def getStreamName() -> string:
+def getStreamName() -> str:
     '''
     Gets the current stream name.
     '''
     return None
 
 
-def getVREDDataDir() -> string:
+def getVREDDataDir() -> str:
     '''
     Gets the VRED data dir. This is the ‘data’ subfolder of the base directory.
     '''
     return None
 
 
-def getVREDDir() -> string:
+def getVREDDir() -> str:
     '''
     Gets the base application directory.
     '''
     return None
 
 
-def getVREDExamplesDir() -> string:
+def getVREDExamplesDir() -> str:
     '''
     Gets the VRED examples dir. This is the ‘examples’ subfolder of the base directory.
     '''
     return None
 
 
-def getVREDFileTypesFilter() -> string:
+def getVREDFileTypesFilter() -> str:
     '''
     Gets the VRED file types filter.
     '''
     return None
 
 
-def hasImportSettings(file: string) -> bool:
+def hasImportSettings(file: str) -> bool:
     '''
     Determines if there are import settings for a given file.
     '''
@@ -193,28 +185,28 @@ def hasImportSettings(fileType: FileType) -> bool:
     return None
 
 
-def hasSmartReferences(file: string) -> bool:
+def hasSmartReferences(file: str) -> bool:
     '''
     Queries for a OSB or VPB file if it contains smart references.
     '''
     return None
 
 
-def importAtfFile(file: string, parent: vrdNode) -> vrdNode:
+def importAtfFile(file: str, parent: vrdNode) -> vrdNode:
     '''
     Imports a file with the ATF loader.
     '''
     return None
 
 
-def importFiles(files: List[string], parent: vrdNode, atfConversionOutputDir: string, loadConvertedAtfFiles: bool, removeConvertedAtfFiles: bool, loadBehavior: bool) -> integer:
+def importFiles(files: List[str], parent: vrdNode, atfConversionOutputDir: str, loadConvertedAtfFiles: bool, removeConvertedAtfFiles: bool, loadBehavior: bool) -> int:
     '''
     Imports a list of files.
     '''
     return None
 
 
-def importMissingFiles(node: vrdNode, removeConvertedAtfFiles: bool) -> integer:
+def importMissingFiles(node: vrdNode, removeConvertedAtfFiles: bool) -> int:
     '''
     Imports missing files from a scene node.
     '''
@@ -228,7 +220,7 @@ def inlineImageSequences():
     pass
 
 
-def isAtfFile(file: string) -> bool:
+def isAtfFile(file: str) -> bool:
     '''
     Checks if the given file can be imported with ATF.
     '''
@@ -242,28 +234,28 @@ def isConvertedAtfTree(root: vrdNode) -> bool:
     return None
 
 
-def isSupportedFile(file: string) -> bool:
+def isSupportedFile(file: str) -> bool:
     '''
     Checks if a given file can be imported.
     '''
     return None
 
 
-def isVredProject(file: string) -> bool:
+def isVredProject(file: str) -> bool:
     '''
     Checks if the given file is a VRED project.
     '''
     return None
 
 
-def jobBelongsToImport(jobId: integer, importId: integer) -> bool:
+def jobBelongsToImport(jobId: int, importId: int) -> bool:
     '''
     Checks if an import identifier belongs to a given job.
     '''
     return None
 
 
-def loadFile(file: string) -> bool:
+def loadFile(file: str) -> bool:
     '''
     Loads a file.
     '''
@@ -284,7 +276,7 @@ def reimportNodes(nodes: List[vrdNode]) -> List[vrdNode]:
     return None
 
 
-def saveFile(file: string) -> bool:
+def saveFile(file: str) -> bool:
     '''
     Saves a file.
     '''
@@ -298,7 +290,7 @@ def setImportSettings(fileType: FileType, settings: vrdAtfSettings):
     pass
 
 
-def setMaxNumImportProcesses(value: integer):
+def setMaxNumImportProcesses(value: int):
     '''
     Sets the maximum number of import processes.
     '''
@@ -347,161 +339,161 @@ def addLoadedMaterial():
     pass
 
 
-def childFileImportAdded(jobId: integer, parentFile: string, childFile: string):
+def childFileImportAdded(jobId: int, parentFile: str, childFile: str):
     '''
     Emitted when a child cad file import was added.
     '''
     pass
 
 
-def childFileImportFinished(jobId: integer, parentFile: string, childFile: string):
+def childFileImportFinished(jobId: int, parentFile: str, childFile: str):
     '''
     Emitted when a child cad file import has finished.
     '''
     pass
 
 
-def childrenFileConversionFinished(jobId: integer, parentFile: string, durationInSeconds: float):
+def childrenFileConversionFinished(jobId: int, parentFile: str, durationInSeconds: float):
     '''
     Emitted when the conversion of all child cad files has finsished.
     '''
     pass
 
 
-def conversionFinished(importId: integer, durationInSeconds: float):
+def conversionFinished(importId: int, durationInSeconds: float):
     '''
     Emitted when a file conversion job has finished.
     '''
     pass
 
 
-def conversionProgressChanged(importId: integer, percent: integer, status: string):
+def conversionProgressChanged(importId: int, percent: int, status: str):
     '''
     Emitted when the progress of the file conversion changes.
     '''
     pass
 
 
-def exportedFile(filename: string):
+def exportedFile(filename: str):
     '''
     Emitted after a file has been exported.
     '''
     pass
 
 
-def fileAddedToLoadQueue(jobId: integer, file: string):
+def fileAddedToLoadQueue(jobId: int, file: str):
     '''
     Emitted when a new cad file has been added to the load queue.
     '''
     pass
 
 
-def fileAddedToScene(jobId: integer, file: string, node: vrdNode):
+def fileAddedToScene(jobId: int, file: str, node: vrdNode):
     '''
     Emitted when a cad file has been added to the current scene.
     '''
     pass
 
 
-def fileConversionAborted(jobId: integer, file: string):
+def fileConversionAborted(jobId: int, file: str):
     '''
     Emitted when a cad file conversion has been aborted.
     '''
     pass
 
 
-def fileConversionFailed(jobId: integer, file: string, description: string):
+def fileConversionFailed(jobId: int, file: str, description: str):
     '''
     Emitted when a cad file conversion has failed.
     '''
     pass
 
 
-def fileConversionFinished(jobId: integer, file: string, state: JobState, durationInSeconds: float):
+def fileConversionFinished(jobId: int, file: str, state: JobState, durationInSeconds: float):
     '''
     Emitted when the conversion of a cad file has finished.
     '''
     pass
 
 
-def fileConversionProgressChanged(jobId: integer, file: string, percent: integer, status: string):
+def fileConversionProgressChanged(jobId: int, file: str, percent: int, status: str):
     '''
     Emitted when the progress of a cad file conversion has changed.
     '''
     pass
 
 
-def fileConversionStarted(jobId: integer, file: string):
+def fileConversionStarted(jobId: int, file: str):
     '''
     Emiited when the conversion of a cad file has started.
     '''
     pass
 
 
-def fileConversionSucceded(jobId: integer, file: string):
+def fileConversionSucceded(jobId: int, file: str):
     '''
     Emitted when a cad file conversion has succeded.
     '''
     pass
 
 
-def fileLoadingFailed(jobId: integer, file: string, description: string):
+def fileLoadingFailed(jobId: int, file: str, description: str):
     '''
     Emitted when loading of an imported cad file has failed.
     '''
     pass
 
 
-def fileLoadingFinished(jobId: integer, file: string, state: JobState):
+def fileLoadingFinished(jobId: int, file: str, state: JobState):
     '''
     Emitted when loading of an imported cad file has finished.
     '''
     pass
 
 
-def fileLoadingProgressChanged(jobId: integer, file: string, percent: integer, status: string):
+def fileLoadingProgressChanged(jobId: int, file: str, percent: int, status: str):
     '''
     Emitted when the loading progress of an imported cad file changes.
     '''
     pass
 
 
-def fileLoadingStarted(jobId: integer, file: string):
+def fileLoadingStarted(jobId: int, file: str):
     '''
     Emitted when loading of an imported cad file starts.
     '''
     pass
 
 
-def fileTypeReceived(file: string, fileType: FileType):
+def fileTypeReceived(file: str, fileType: FileType):
     '''
     Emitted when a new cad file type has been received.
     '''
     pass
 
 
-def importedFile(filename: string):
+def importedFile(filename: str):
     '''
     Emitted after a file has been imported.
     '''
     pass
 
 
-def importFinished(importId: integer, durationInSeconds: float):
+def importFinished(importId: int, durationInSeconds: float):
     '''
     Emitted when an import job has finished.
     '''
     pass
 
 
-def importProgressChanged(importId: integer, percent: integer):
+def importProgressChanged(importId: int, percent: int):
     '''
     Emitted when the import progress is updated.
     '''
     pass
 
 
-def loadedGeometry(filename: string, nodeid: integer):
+def loadedGeometry(filename: str, nodeid: int):
     '''
     Emitted after a geometry has been loaded.
     '''
@@ -529,7 +521,7 @@ def preNewScene():
     pass
 
 
-def progress(p: integer):
+def progress(p: int):
     '''
     Periodically emitted to provide a percentage value of how much of the file has been loaded.
     '''
@@ -543,21 +535,21 @@ def project():
     pass
 
 
-def projectLoad(filename: string):
+def projectLoad(filename: str):
     '''
     Emitted when project loading starts.
     '''
     pass
 
 
-def projectLoaded(filename: string):
+def projectLoaded(filename: str):
     '''
     Emitted after a project has been successfully loaded. This signal is not sent if loading aborted with an error.
     '''
     pass
 
 
-def projectLoadFinished(filename: string, success: bool):
+def projectLoadFinished(filename: str, success: bool):
     '''
     Emitted after a project has been loaded The signal will always be sent whether loading succeeded or not.
     '''
@@ -571,21 +563,21 @@ def projectMerged():
     pass
 
 
-def projectSave(filename: string):
+def projectSave(filename: str):
     '''
     Signal is emitted when a project is about to be saved.
     '''
     pass
 
 
-def projectSaved(filename: string):
+def projectSaved(filename: str):
     '''
     Signal is emitted when a project has finished saving.
     '''
     pass
 
 
-def savedGeometry(filename: string):
+def savedGeometry(filename: str):
     '''
     Emitted after a geometry has been saved.
     '''
@@ -599,14 +591,14 @@ def sequences():
     pass
 
 
-def startingConversion(importId: integer, fileCount: integer):
+def startingConversion(importId: int, fileCount: int):
     '''
     Emitted when file conversion starts.
     '''
     pass
 
 
-def startingImport(importId: integer, fileCount: integer):
+def startingImport(importId: int, fileCount: int):
     '''
     Emitted when a file import job is started.
     '''

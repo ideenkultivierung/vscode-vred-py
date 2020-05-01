@@ -10,11 +10,7 @@ Base class for all scene plate types.
 from typing import List
 
 
-class ContentType():
-    pass
-
-
-class integer():
+class NodeType():
     pass
 
 
@@ -26,15 +22,7 @@ class SizeType():
     pass
 
 
-class Position():
-    pass
-
-
-class NodeType():
-    pass
-
-
-class QVector3D():
+class vrdImage():
     pass
 
 
@@ -42,11 +30,15 @@ class RepeatMode():
     pass
 
 
-class vrdImage():
+class QVector3D():
     pass
 
 
-class string():
+class Position():
+    pass
+
+
+class ContentType():
     pass
 
 
@@ -92,7 +84,7 @@ def getContrast() -> float:
     return None
 
 
-def getFont() -> string:
+def getFont() -> str:
     '''
     Returns font name.
     '''
@@ -106,28 +98,28 @@ def getFontColor() -> QVector3D:
     return None
 
 
-def getFontHeight() -> integer:
+def getFontHeight() -> int:
     '''
     Returns the vertical resolution in pixels per text line.
     '''
     return None
 
 
-def getFontStyle() -> string:
+def getFontStyle() -> str:
     '''
     Returns text font style.
     '''
     return None
 
 
-def getFrameOffset() -> integer:
+def getFrameOffset() -> int:
     '''
     Returns offset to the image number when using an image sequence.
     '''
     return None
 
 
-def getHeight() -> integer:
+def getHeight() -> int:
     '''
     Returns the height of the canvas in pixels for HTML content.
     '''
@@ -148,7 +140,7 @@ def getImage() -> vrdImage:
     return None
 
 
-def getImageNumber() -> integer:
+def getImageNumber() -> int:
     '''
     Returns image number in current image sequence.
     '''
@@ -225,7 +217,7 @@ def getSizeMode() -> SizeType:
     return None
 
 
-def getText() -> string:
+def getText() -> str:
     '''
     Returns the text.
     '''
@@ -239,7 +231,7 @@ def getTransparency() -> float:
     return None
 
 
-def getUrl() -> string:
+def getUrl() -> str:
     '''
     Returns the url or the content of a web site.
     '''
@@ -253,14 +245,14 @@ def getUseImageSequence() -> bool:
     return None
 
 
-def getWhiteBalance() -> integer:
+def getWhiteBalance() -> int:
     '''
     Returns white balance from color correction.
     '''
     return None
 
 
-def getWidth() -> integer:
+def getWidth() -> int:
     '''
     Returns the width of the canvas in pixels for HTML content.
     '''
@@ -309,7 +301,7 @@ def setContrast(contrast: float):
     pass
 
 
-def setFont(fontName: string):
+def setFont(fontName: str):
     '''
     Sets the text font.
     '''
@@ -323,28 +315,28 @@ def setFontColor(color: QVector3D):
     pass
 
 
-def setFontHeight(fontHeight: integer):
+def setFontHeight(fontHeight: int):
     '''
     Sets the vertical resolution in pixels per text line.
     '''
     pass
 
 
-def setFontStyle(style: string):
+def setFontStyle(style: str):
     '''
     Sets text font style.
     '''
     pass
 
 
-def setFrameOffset(frameOffset: integer):
+def setFrameOffset(frameOffset: int):
     '''
     Sets an offset to the image number when using an image sequence.
     '''
     pass
 
 
-def setHeight(height: integer):
+def setHeight(height: int):
     '''
     Sets the height of the canvas in pixels for HTML content.
     '''
@@ -365,7 +357,7 @@ def setImage(img: vrdImage):
     pass
 
 
-def setImageNumber(imageNumber: integer):
+def setImageNumber(imageNumber: int):
     '''
     Sets the image number in current image sequence.
     '''
@@ -442,7 +434,7 @@ def setSizeMode(sizeMode: SizeType):
     pass
 
 
-def setText(text: string):
+def setText(text: str):
     '''
     Sets the text.
     '''
@@ -456,7 +448,7 @@ def setTransparency(transparency: float):
     pass
 
 
-def setUrl(url: string):
+def setUrl(url: str):
     '''
     The url can contain a valid URL to a website (‘        http://www.autodesk.com’) or the html content of a website as a string.
     '''
@@ -470,14 +462,14 @@ def setUseImageSequence(useImageSequence: bool):
     pass
 
 
-def setWhiteBalance(whiteBalance: integer):
+def setWhiteBalance(whiteBalance: int):
     '''
     Shifts the content’s white balance to match the color temperature of the scene in Kelvin. Lower values produce cooler (bluish) colors. Higher values produce warmer (yellowish) colors.
     '''
     pass
 
 
-def setWidth(width: integer):
+def setWidth(width: int):
     '''
     Sets the width of the canvas in pixels for HTML content.
     '''

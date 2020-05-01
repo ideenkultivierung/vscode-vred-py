@@ -10,23 +10,7 @@ Base class for all work with scene plate.
 from typing import List
 
 
-class vrdNode():
-    pass
-
-
-class vrdSceneplateNode():
-    pass
-
-
-class vrdSwitchNode():
-    pass
-
-
 class NodeType():
-    pass
-
-
-class QVector3D():
     pass
 
 
@@ -34,7 +18,19 @@ class QImage():
     pass
 
 
-class string():
+class vrdSceneplateNode():
+    pass
+
+
+class vrdNode():
+    pass
+
+
+class QVector3D():
+    pass
+
+
+class vrdSwitchNode():
     pass
 
 
@@ -59,7 +55,7 @@ def createGroupForNodes(nodes: List[vrdNode]) -> vrdNode:
     return None
 
 
-def createNode(parent: vrdNode, type: NodeType, name: string) -> vrdNode:
+def createNode(parent: vrdNode, type: NodeType, name: str) -> vrdNode:
     '''
     Creates a new sceneplate node.
     '''
@@ -87,14 +83,14 @@ def duplicateNodes(nodes: List[vrdNode]):
     pass
 
 
-def findNode(name: string) -> vrdNode:
+def findNode(name: str) -> vrdNode:
     '''
     Returns the first node found in sceneplate hierarchy with the given name.
     '''
     return None
 
 
-def findNodes(name: string) -> List[vrdNode]:
+def findNodes(name: str) -> List[vrdNode]:
     '''
     Returns list of nodes found in sceneplate hierarchy with the given name.
     '''
@@ -129,7 +125,7 @@ def getDefaultBackgroundTransparency() -> float:
     return None
 
 
-def getDefaultFont() -> string:
+def getDefaultFont() -> str:
     '''
     Returns the default font for new created (text) sceneplates.
     '''
@@ -164,7 +160,7 @@ def getSelectedNodes() -> List[vrdNode]:
     return None
 
 
-def loadNodes(filename: string) -> bool:
+def loadNodes(filename: str) -> bool:
     '''
     Load sceneplate nodes from file with the given name.
     '''
@@ -227,7 +223,7 @@ def removeNodes(nodes: List[vrdNode]):
     pass
 
 
-def saveNodes(filename: string, nodes: List[vrdNode]) -> bool:
+def saveNodes(filename: str, nodes: List[vrdNode]) -> bool:
     '''
     Saves the nodes to the file with the given name.
     '''
@@ -248,7 +244,7 @@ def setDefaultBackgroundTransparency(transparency: float):
     pass
 
 
-def setDefaultFont(font: string):
+def setDefaultFont(font: str):
     '''
     Sets the default font for new created (text) sceneplates.
     '''

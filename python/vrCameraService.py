@@ -10,7 +10,7 @@ Interface to access cameras and viewpoints in VRED.
 from typing import List
 
 
-class vrdNode():
+class vrdCameraNode():
     pass
 
 
@@ -18,23 +18,7 @@ class vrdCameraTrackNode():
     pass
 
 
-class CameraProjectionMode():
-    pass
-
-
 class CameraConstraint():
-    pass
-
-
-class ViewpointCreationMode():
-    pass
-
-
-class string():
-    pass
-
-
-class vrdCameraNode():
     pass
 
 
@@ -42,28 +26,40 @@ class vrdViewpointNode():
     pass
 
 
-def createCamera(name: string, mode: CameraProjectionMode, constraint: CameraConstraint, sceneGraphParentNode: vrdNode, cameraGraphParentNode: vrdNode) -> vrdCameraNode:
+class vrdNode():
+    pass
+
+
+class CameraProjectionMode():
+    pass
+
+
+class ViewpointCreationMode():
+    pass
+
+
+def createCamera(name: str, mode: CameraProjectionMode, constraint: CameraConstraint, sceneGraphParentNode: vrdNode, cameraGraphParentNode: vrdNode) -> vrdCameraNode:
     '''
     Creates a new camera.
     '''
     return None
 
 
-def createCameraGroup(name: string, cameraGraphParentNode: vrdNode) -> vrdNode:
+def createCameraGroup(name: str, cameraGraphParentNode: vrdNode) -> vrdNode:
     '''
     Creates a new camera group.
     '''
     return None
 
 
-def createCameraTrack(name: string, cameraNode: vrdCameraNode) -> vrdCameraTrackNode:
+def createCameraTrack(name: str, cameraNode: vrdCameraNode) -> vrdCameraTrackNode:
     '''
     Creates a new camera track.
     '''
     return None
 
 
-def createViewpoint(name: string, cameraTrack: vrdCameraTrackNode) -> vrdViewpointNode:
+def createViewpoint(name: str, cameraTrack: vrdCameraTrackNode) -> vrdViewpointNode:
     '''
     Creates a new viewpoint.
     '''
@@ -98,14 +94,14 @@ def getAllViewpoints() -> List[vrdViewpointNode]:
     return None
 
 
-def getCamera(name: string, useCameraGraph: bool) -> vrdCameraNode:
+def getCamera(name: str, useCameraGraph: bool) -> vrdCameraNode:
     '''
     Returns the first camera with the given name.
     '''
     return None
 
 
-def getCameraNames() -> List[string]:
+def getCameraNames() -> List[str]:
     '''
     Returns a list with the names of all cameras.
     '''
@@ -126,7 +122,7 @@ def getCameras(useCameraScenegraph: bool) -> List[vrdCameraNode]:
     return None
 
 
-def getViewpoint(name: string) -> vrdViewpointNode:
+def getViewpoint(name: str) -> vrdViewpointNode:
     '''
     Returns the first viewpoint with the given name.
     '''
@@ -140,28 +136,28 @@ def getViewpointCreationMode() -> ViewpointCreationMode:
     return None
 
 
-def load(filename: string) -> List[vrdNode]:
+def load(filename: str) -> List[vrdNode]:
     '''
     Load camera related nodes.
     '''
     return None
 
 
-def saveCameras(nodes: List[vrdNode], filename: string) -> bool:
+def saveCameras(nodes: List[vrdNode], filename: str) -> bool:
     '''
     Save cameras and viewpoints to an .xml file (no hierarchy, groups or tracks supported).
     '''
     return None
 
 
-def saveNodes(nodes: List[vrdNode], filename: string) -> bool:
+def saveNodes(nodes: List[vrdNode], filename: str) -> bool:
     '''
     Save nodes including children (tracks, groups, viewpoints) to .osb file.
     '''
     return None
 
 
-def saveViewpoints(filename: string) -> bool:
+def saveViewpoints(filename: str) -> bool:
     '''
     Save all viewpoints to ‘.xml’ file.
     '''

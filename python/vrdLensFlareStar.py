@@ -14,10 +14,6 @@ class vrdImage():
     pass
 
 
-class integer():
-    pass
-
-
 class StarShape():
     pass
 
@@ -29,7 +25,7 @@ def getImage() -> vrdImage:
     return None
 
 
-def getNumberOfBursts() -> integer:
+def getNumberOfBursts() -> int:
     '''
     Get how many arms a Starburst element has.
     '''
@@ -57,7 +53,7 @@ def setImage(image: vrdImage):
     pass
 
 
-def setNumberOfBursts(numberOfBursts: integer):
+def setNumberOfBursts(numberOfBursts: int):
     '''
     Use to set how many arms a Starburst element has.
     '''

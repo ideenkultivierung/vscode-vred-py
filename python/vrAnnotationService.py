@@ -10,19 +10,7 @@ Creates a new annotation. Each annotation is created with a unique name. If the 
 from typing import List
 
 
-class QColor():
-    pass
-
-
 class vrdNode():
-    pass
-
-
-class vrdAnnotationNode():
-    pass
-
-
-class string():
     pass
 
 
@@ -30,7 +18,15 @@ class ScalingMode():
     pass
 
 
-def createAnnotation(name: string) -> vrdAnnotationNode:
+class QColor():
+    pass
+
+
+class vrdAnnotationNode():
+    pass
+
+
+def createAnnotation(name: str) -> vrdAnnotationNode:
     '''
     Creates a new annotation. Each annotation is created with a unique name. If the passed name is not unique (e.g. an annotation with that name already exists), it is modified so that it is unique.
     '''
@@ -51,7 +47,7 @@ def duplicateAnnotation(annotation: vrdAnnotationNode) -> vrdAnnotationNode:
     return None
 
 
-def findAnnotation(name: string) -> vrdAnnotationNode:
+def findAnnotation(name: str) -> vrdAnnotationNode:
     '''
     Searches for an existing annotation via name.
     '''
@@ -121,7 +117,7 @@ def getShowAnnotations() -> bool:
     return None
 
 
-def loadAnnotations(path: string) -> List[vrdAnnotationNode]:
+def loadAnnotations(path: str) -> List[vrdAnnotationNode]:
     '''
     Loads annotation data from an xml file. The annotations are directly added to the scene.
     '''
@@ -135,7 +131,7 @@ def pickAnnotation(annotation: vrdAnnotationNode):
     pass
 
 
-def saveAnnotations(annotations: List[vrdAnnotationNode], path: string):
+def saveAnnotations(annotations: List[vrdAnnotationNode], path: str):
     '''
     Saves a list of annotations. The annotation data is stored in an xml file.
     '''

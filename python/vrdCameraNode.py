@@ -10,7 +10,11 @@ This class represents a camera in VRED.
 from typing import List
 
 
-class integer():
+class vrdNode():
+    pass
+
+
+class vrdTurntable():
     pass
 
 
@@ -18,15 +22,7 @@ class vrdCameraCollider():
     pass
 
 
-class vrdNode():
-    pass
-
-
 class vrdCameraTrackNode():
-    pass
-
-
-class vrdTurntable():
     pass
 
 
@@ -65,14 +61,14 @@ def getCameraCollider() -> vrdCameraCollider:
     return None
 
 
-def getCameraTrack(cameraTrackIndex: integer) -> vrdCameraTrackNode:
+def getCameraTrack(cameraTrackIndex: int) -> vrdCameraTrackNode:
     '''
     Gets the camera track.
     '''
     return None
 
 
-def getCameraTrackCount() -> integer:
+def getCameraTrackCount() -> int:
     '''
     Returns the number of camera tracks in the camera.
     '''

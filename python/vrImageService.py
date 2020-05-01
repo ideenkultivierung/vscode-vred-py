@@ -14,10 +14,6 @@ class vrdImage():
     pass
 
 
-class string():
-    pass
-
-
 def createImage() -> vrdImage:
     '''
     Creates an empty image.
@@ -25,28 +21,28 @@ def createImage() -> vrdImage:
     return None
 
 
-def loadImage(filename: string) -> vrdImage:
+def loadImage(filename: str) -> vrdImage:
     '''
     Loads an image.
     '''
     return None
 
 
-def readImageInformation(filename: string) -> string:
+def readImageInformation(filename: str) -> str:
     '''
     Reads an image information.
     '''
     return None
 
 
-def saveImage(image: vrdImage, filename: string) -> bool:
+def saveImage(image: vrdImage, filename: str) -> bool:
     '''
     Saves an image.
     '''
     return None
 
 
-def saveImageSequence(image: vrdImage, directory: string) -> bool:
+def saveImageSequence(image: vrdImage, directory: str) -> bool:
     '''
     Saves an image sequence.
     '''

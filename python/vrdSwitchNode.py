@@ -10,18 +10,14 @@ Returns the current choice
 from typing import List
 
 
-class integer():
-    pass
-
-
-def getChoice() -> integer:
+def getChoice() -> int:
     '''
     Returns the current choice
     '''
     return None
 
 
-def setChoice(choice: integer):
+def setChoice(choice: int):
     '''
     Set the choice.
     '''

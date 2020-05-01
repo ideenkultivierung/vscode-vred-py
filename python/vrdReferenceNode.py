@@ -14,15 +14,11 @@ class State():
     pass
 
 
-class string():
-    pass
-
-
 class ExportLocation():
     pass
 
 
-def createSmartPath(location: ExportLocation, customPath: string) -> string:
+def createSmartPath(location: ExportLocation, customPath: str) -> str:
     '''
     Constructs the path to the smart file.
     '''
@@ -253,21 +249,21 @@ def saveSmartReference():
     pass
 
 
-def saveSmartReferenceAs(path: string, unshare: bool):
+def saveSmartReferenceAs(path: str, unshare: bool):
     '''
     Save content of the reference to a new project file.
     '''
     pass
 
 
-def setSmartPath(path: string):
+def setSmartPath(path: str):
     '''
     Change the path to the smart reference file.
     '''
     pass
 
 
-def setSourcePath(path: string):
+def setSourcePath(path: str):
     '''
     Change the path to the source file.
     '''

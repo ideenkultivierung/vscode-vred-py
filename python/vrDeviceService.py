@@ -10,15 +10,7 @@ This service allows the management of VR devices and interactions that are trigg
 from typing import List
 
 
-class vrdNode():
-    pass
-
-
 class vrdDeviceAction():
-    pass
-
-
-class vrdVRDevice():
     pass
 
 
@@ -26,36 +18,40 @@ class vrdDeviceInteraction():
     pass
 
 
+class vrdVRDevice():
+    pass
+
+
+class vrdNode():
+    pass
+
+
 class QVector3D():
     pass
 
 
-class string():
-    pass
-
-
-def activateInteraction(interaction: string):
+def activateInteraction(interaction: str):
     '''
     Activates an interaction. This allows an interaction to resume receiving input signals, if the interaction is in the active interaction group.
     '''
     pass
 
 
-def createInteraction(name: string) -> vrdDeviceInteraction:
+def createInteraction(name: str) -> vrdDeviceInteraction:
     '''
     Creates a new device interaction and makes it available for mapping inputs to its actions.
     '''
     return None
 
 
-def createVRDevice(name: string) -> vrdVRDevice:
+def createVRDevice(name: str) -> vrdVRDevice:
     '''
     Creates a virtual device. This can be used to integrate custom hand tracking wtih python.
     '''
     return None
 
 
-def deactivateInteraction(interaction: string):
+def deactivateInteraction(interaction: str):
     '''
     Deactivates an interaction. The interaction will not receive input signals anymore.
     '''
@@ -69,7 +65,7 @@ def deleteVRDevice(device: vrdVRDevice):
     pass
 
 
-def getActiveInteractionGroup() -> string:
+def getActiveInteractionGroup() -> str:
     '''
     Gets the currently active interaction group.
     '''
@@ -83,7 +79,7 @@ def getConnectedVRDevices() -> List[vrdVRDevice]:
     return None
 
 
-def getInteraction(name: string) -> vrdDeviceInteraction:
+def getInteraction(name: str) -> vrdDeviceInteraction:
     '''
     Gets an interactions that is already known to the service.
     '''
@@ -104,14 +100,14 @@ def getTrackingOrigin() -> QVector3D:
     return None
 
 
-def getVRDevice(name: string) -> vrdVRDevice:
+def getVRDevice(name: str) -> vrdVRDevice:
     '''
     Gets an VR device, which can be a controllers or a trackers by its name.
     '''
     return None
 
 
-def getVRDeviceBySerialNumber(serialNumber: string) -> vrdVRDevice:
+def getVRDeviceBySerialNumber(serialNumber: str) -> vrdVRDevice:
     '''
     Gets an VR device, which can be a controllers or a trackers by its serial number.
     '''
@@ -125,7 +121,7 @@ def removeInteraction(interaction: vrdDeviceInteraction):
     pass
 
 
-def setActiveInteractionGroup(interactionGroup: string):
+def setActiveInteractionGroup(interactionGroup: str):
     '''
     Activates a group of interactions which will from now on receive all the input signals. This will also deactivate all other interaction groups as only one interaction group can be active.
     '''

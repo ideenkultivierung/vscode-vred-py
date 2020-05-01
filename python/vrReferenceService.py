@@ -10,18 +10,6 @@ The reference service provides functions for querying and managing reference nod
 from typing import List
 
 
-class integer():
-    pass
-
-
-class vrdNode():
-    pass
-
-
-class LoadMode():
-    pass
-
-
 class NotificationMode():
     pass
 
@@ -30,11 +18,15 @@ class vrdReferenceNode():
     pass
 
 
-class string():
+class ExportLocation():
     pass
 
 
-class ExportLocation():
+class vrdNode():
+    pass
+
+
+class LoadMode():
     pass
 
 
@@ -52,14 +44,14 @@ def createSmart(parent: vrdNode) -> vrdReferenceNode:
     return None
 
 
-def createSource(path: string, parent: vrdNode) -> vrdReferenceNode:
+def createSource(path: str, parent: vrdNode) -> vrdReferenceNode:
     '''
     Creates a new source reference with the given path.
     '''
     return None
 
 
-def getAllAvailableFileFormats() -> List[string]:
+def getAllAvailableFileFormats() -> List[str]:
     '''
     Returns a list with all file endings used in the loaded references (source and smart).
     '''
@@ -73,7 +65,7 @@ def getChildReferences():
     pass
 
 
-def getCustomExportPath() -> string:
+def getCustomExportPath() -> str:
     '''
     Queries the custom export path.
     '''
@@ -150,7 +142,7 @@ def getUpdateMonitoringEnabled() -> bool:
     return None
 
 
-def getUpdateMonitoringInterval() -> integer:
+def getUpdateMonitoringInterval() -> int:
     '''
     Returns the current time between background update checks in miliseconds.
     '''
@@ -192,7 +184,7 @@ def removeReference(node: vrdReferenceNode) -> vrdNode:
     return None
 
 
-def setCustomExportPath(path: string):
+def setCustomExportPath(path: str):
     '''
     Sets the custom path for exported smart references. This path will be used, when the location is set to Custom.
     '''
@@ -227,7 +219,7 @@ def setRevisionMonitoringEnabled(value: bool):
     pass
 
 
-def setRevisionMonitoringExpressions(expressions: List[string]):
+def setRevisionMonitoringExpressions(expressions: List[str]):
     '''
     Sets the list of regular expressions used to detect revision numbers.
     '''
@@ -248,14 +240,14 @@ def setUpdateMonitoringEnabled(value: bool):
     pass
 
 
-def setUpdateMonitoringInterval(msecs: integer):
+def setUpdateMonitoringInterval(msecs: int):
     '''
     Sets the update monitoring interval in miliseconds.
     '''
     pass
 
 
-def sortRevisions(revisions: List[string]) -> List[string]:
+def sortRevisions(revisions: List[str]) -> List[str]:
     '''
     Sorts a list of revisions from oldest to newest.
     '''

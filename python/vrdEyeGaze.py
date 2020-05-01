@@ -10,11 +10,11 @@ Holds eye gaze data returned by     vrHMDService.getEyeGaze().
 from typing import List
 
 
-class QVector3D():
+class vrdEyeGaze():
     pass
 
 
-class vrdEyeGaze():
+class QVector3D():
     pass
 
 
