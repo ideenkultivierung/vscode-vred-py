@@ -1,26 +1,24 @@
 # VRED-Py
 
-## Visual Studio Code Tools for Autodesk VRED
+## Visual Studio Code Tools for Autodesk VRED 2021
 
 Writing complex plugins for Autodesk VRED can be a tedious process. This extension aims to provide tools to help with VRED plugin development and get rid of some shortcomings of the default workflow.
 
+## How-To
+
+Just import the vred module you would like to have autocompletion for at the top of your script and start typing.
+
 ## Features
 
-- [x] Autocompletion for most functions in Python API v1
-- [ ] (Coming soon!) Autocompletion for most functions in Python API v2
+- Autocompletion for most functions in Python API v1
+- Autocompletion for most functions in Python API v2
 
 ## Planned Features
 
-- [ ] Build scripts
-- [ ] External module managment
-
-## Release Notes
-
-### v0.0.1-alpha
-
-Alpha release with for testing and collecting ideas
-
----
+- Type hints for functions
+- Cover all of Python API v1
+- Build scripts
+- External module managment
 
 ## Feature Requests and Bugs
 
