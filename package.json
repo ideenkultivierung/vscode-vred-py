@@ -2,7 +2,7 @@
   "name": "vscode-vred-py",
   "displayName": "VRED-Py",
   "description": "Visual Studio Code Tools for Autodesk VRED",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "publisher": "chr33z",
   "author": {
     "name": "Christopher Gebhardt",

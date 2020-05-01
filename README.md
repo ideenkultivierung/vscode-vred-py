@@ -10,15 +10,19 @@ Just import the vred module you would like to have autocompletion for at the top
 
 ## Features
 
-- Autocompletion for most functions in Python API v1
-- Autocompletion for most functions in Python API v2
+- Autocompletion for VRED Python API v1/v2
+- Documentation for VRED Python API v1/v2
+- Type Hints for VRED Python API v2
 
 ## Planned Features
 
-- Type hints for functions
-- Cover all of Python API v1
 - Build scripts
 - External module managment
+
+## Issues
+
+- Missing list return type hints
+- Missing module/class documentation
 
 ## Feature Requests and Bugs
 
