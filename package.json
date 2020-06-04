@@ -20,7 +20,7 @@
     "Other"
   ],
   "activationEvents": [
-    "*"
+    "onLanguage:python"
   ],
   "main": "./out/extension.js",
   "contributes": {
