@@ -123,3 +123,5 @@ temp/
 
 # VSCode Extension
 out/
+
+.DS_Store
