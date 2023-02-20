@@ -33,4 +33,5 @@ This extension is still under development. Help improving this extension by subm
 ## Looking for an Autodesk VRED consultant / technical adviser / coding coach / programmer?
 
 - It's your lucky day! I'm offering my services as the above mentioned!
-- Please contact me via my [github account](https://github.com/chr33z) or via chr33z@gmail.com
+- Please contact me on my company's email cg@ideenkultivierung.de or contact us via [www.ideenkultivierung.de]([https://github.com/chr33z](https://www.ideenkultivierung.de))
+- You can also contact me on my private [github account](https://github.com/chr33z) or via chr33z@gmail.com
